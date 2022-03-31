@@ -1,0 +1,151 @@
+ body{
+    margin:0;
+    padding:0px;
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.178);
+    margin-top: 3rem;
+    font-size: 14px;
+  }
+  
+  .box {
+    max-width: 350px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #e6e6e6;
+    
+    margin: 0 0 10px;
+    padding-bottom: 15px 0;
+    flex-grow: 1;
+    background:#fff;
+  }
+  
+  .heading {
+    margin: 22px auto 12px;
+    background-position: -98px 0;
+    height: 51px;
+    width: 177px;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .field {
+    margin: 10px 0;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    text-overflow: initial;
+    color: #fff;
+  }
+  
+  input {
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    width: 16rem;
+    height: 1.2rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #efefef;
+    color: rgb(22, 2, 27);
+  }
+  input[type="name"],input[type="password"]
+  {
+      padding-left: 10px;
+      position: relative;
+      height: 35px;
+      font-size: 17px;
+  }
+  label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    padding-bottom: 15px;
+    transform: translateY(10px);
+    line-height: 6px;
+    transition: all ease-out 0.1s;
+    font-size: 14px;
+    color: #999;
+    padding-top: 6px;
+  }
+  /* hiding placeholder in all browsers */
+  
+  input::placeholder {
+      visibility: hidden;
+  }
+  
+  /* hiding  placeholder in mozilla */
+  .login-form ::-moz-placeholder {
+    color: transparent;
+  }
+  
+  /* label final position */
+  input:not(:placeholder-shown) + label {
+    transform: translateY(0);
+    font-size: 11px;
+  }
+  
+  /* input padding increases if placeholder is not shown */
+  input:not(:placeholder-shown) {
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+  
+  .login-button {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    background-color:#40C3CD;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+    margin-top: 6px;
+  }
+  
+  .separator .line {
+    height: 1px;
+    width: 40%;
+    background-color: #dbdbdb;
+  }
+  
+  
+
+  .forgot-password {
+    font-size: 11px;
+    color: #003569;
+    align-items: center;
+  }
+  
+  .box {
+    color: #000000;
+    font-weight: 600;
+  }

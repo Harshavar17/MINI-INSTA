@@ -1,0 +1,136 @@
+body{
+  background-color: transparent rgb(235, 235, 235);
+  background-image: url(image.png);
+  background-position: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+/* header style */
+.page .header{
+  text-align: center;
+  color: rgb(181, 99, 205);
+}
+
+.page .header > p{
+  font-weight: bold;
+  color: rgb(142, 142, 142);
+  font-size: 18px;
+}
+
+.page .header > button{
+  width: inherit;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(64, 195, 205);
+  color: rgb(255, 255, 255);
+}
+
+.container div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(142, 142, 142);
+}
+
+.container div p{
+  padding: 0 20px;  
+}
+
+.container div hr{
+  width: 200px;
+  
+}
+
+/* container style*/
+.page .container{
+  display: flex;
+  flex-direction: column;
+}
+
+.page .container form, input{
+  width: inherit;
+}
+
+.page .container form input{
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(250, 250, 250);
+  padding: 10px 5px;
+  margin: 5px 0;
+}
+
+.page .container form input:last-of-type{
+  margin-bottom: 10px;  
+}
+
+.page .container form button{
+  width: inherit;
+  margin-bottom: 20px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(64, 195, 205);
+  color: rgb(255, 255, 255);
+}
+
+
+/* option style */
+.option p > a{
+    text-decoration: none;
+    color: rgb(0, 160, 247);
+}
+@media only screen and (max-width: 400px) {
+    body {
+        font-family: Freight Sans
+    }
+  
+  .page .footer{
+    width: inherith
+  }
+}
+
+@media only screen and (min-width: 401px){
+    body {
+        font-family: Neue Helvetica
+    }
+  .page{
+    border: 1px solid rgb(219, 219, 219);
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin: 40px 40px 10px 40px;
+  }
+  
+   .page .header{
+     align-items: center;
+    width: 270px;
+    margin-top: 15px;
+  } 
+  
+   .page .container{
+    width: 270px;
+  } 
+   
+  .option{
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 70px;
+    margin-top: 20px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+}
+
